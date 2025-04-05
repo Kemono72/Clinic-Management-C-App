@@ -35,5 +35,5 @@ Built during my programming fundamentals course using structured design principl
 ```bash
 gcc a1ms3.c clinic.c core.c -o clinicApp
 ./clinicApp
-
+```
 💡 Created with care and caffeine ☕ by Kemono

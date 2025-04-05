@@ -1,0 +1,65 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        Assignment 1 � reflection 
+Full Name  : Kemono Onomek
+Student ID#:146433230
+Email      :arjoshi5@myseneca.ca
+Section    :ZBB
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+/////////////////////////////////////////////////////////////////////////*/
+
+Reflection Question 1
+1. In MS2 of this project, you were able to use the string library. Select two code snippets from
+your MS1 where you replace your code with one function from the string library and explain the
+benefits of using the string library functions over your code. (Minimum: 150 words)
+
+1) In Milestone 1 I had some code that used manually counting of the length of a string and then printing its first three characters. Below are two snippets where I replaced my code with functions from  library:
+
+Before: 
+
+int len = 0;
+while (str != NULL && str[len] && isdigit(str[len])) {
+    len++;
+}
+
+After:
+
+#include <string.h>
+
+int len = strlen(str);
+
+Before: 
+
+int i = 0;
+while (i < 3) {
+    printf("%c", str[i]);
+    i++;
+}
+
+After: 
+
+#include <string.h>
+
+char prefix[4];
+strcpy(prefix, str);
+prefix[3] = '\0';
+
+Using the library functions like strlen() and strcpy() makes the code simple  and more readable. It also improves efficiency by utilizing optimized library functions rather than manually counting characters or copying them one by one. 
+
+2. In C programming, the two string copying functions are strcpy() and memcpy(). strcpy() is used for copying null-terminated strings, as the code just automatically appends a null terminator at the end of the copied string. While, memcpy() is used for copying raw memory blocks and requires the programmer to specify the exact number of bytes to copy.
+
+The line of code where strcpy() is:
+
+strcpy(prefix, str);
+
+3. To keep the list of appointments in the correct order no matter the change, I used a sorting algorithm based on the appointment's date and time stored as minutes. 
+
+Convert each appointment's date and time into total minutes and store it in the time.min field of the appointment struct.
+Use a sorting algorithm to compare appointments based on their time.min values and swap them if necessary to arrange them in ascending order.
+After sorting, convert the time.min values back to their original date and time format for display.
+
+
+

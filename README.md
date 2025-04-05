@@ -1,6 +1,6 @@
 # Clinic Management System 🏥 (C Language)
 
-A C-based console application created with care and caffeine to simulate a simplified clinic’s patient and appointment management system.
+A C-based console application created with care to simulate a simplified clinic’s patient and appointment management system.
 Built during my programming fundamentals course using structured design principles, modular header/source files and user-driven interaction.
 
 ## 🧠 Key Features
@@ -35,3 +35,5 @@ Built during my programming fundamentals course using structured design principl
 ```bash
 gcc a1ms3.c clinic.c core.c -o clinicApp
 ./clinicApp
+
+💡 Created with care and caffeine ☕ by Kemono
